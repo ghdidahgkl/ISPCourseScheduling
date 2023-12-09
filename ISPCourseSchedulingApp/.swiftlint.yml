@@ -1,0 +1,90 @@
+# SwiftLint Configuration File
+excluded:
+  - Carthage
+  - Pods
+  - SwiftLint/Common/3rdPartyLib
+disabled_rules:
+  - trailing_whitespace
+  - force_cast
+  - discarded_notification_center_observer
+  - notification_center_detachment
+  - orphaned_doc_comment
+  - todo
+  - unused_capture_list
+
+  - identifier_name
+  - attributes
+  - unused_closure_parameter
+  - type_body_length
+opt_in_rules:
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - colon # promote to error
+  - convenience_type
+  - discouraged_object_literal
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - enum_case_associated_values_count
+  - fatal_error_message
+  - first_where
+  - implicitly_unwrapped_optional
+  - last_where
+  - legacy_random
+  - trailing_closure
+  - literal_expression_end_indentation
+  - operator_usage_whitespace
+  - overridden_super_call
+  - pattern_matching_keywords
+  - prefer_self_type_over_type_of_self
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - strict_fileprivate
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - unused_import
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  - yoda_condition
+
+force_cast: warning
+force_try: warning
+
+legacy_hashing: error
+
+identifier_name:
+  excluded:
+    - id
+
+line_length:
+  warning: 150
+  error: 200
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_urls: true
+
+function_body_length:
+  warning: 300
+  error: 500
+
+function_parameter_count:
+  warning: 6
+  error: 8
+
+type_body_length:
+  warning: 300
+  error: 500
+
+file_length:
+  warning: 1000
+  error: 1500
+  ignore_comment_only_lines: true
+
+cyclomatic_complexity:
+  warning: 15
+  error: 25
+
+reporter: "xcode"
